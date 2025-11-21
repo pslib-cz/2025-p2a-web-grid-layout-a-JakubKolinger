@@ -74,6 +74,7 @@
     }
 
     .layout {
+        min-height: calc(100dvh - 2 * 0.75rem);
         display: grid;
         gap: 1em;
         grid-template-areas: 
@@ -95,9 +96,15 @@
                 "footer footer footer"
             ;
         }
+        .layout__nav {
+            align-self: initial;
+        }
     }
 
     @media (min-width: 980px) {
+        .layout__nav {
+            align-self: initial;
+        }
     }
 }
 
